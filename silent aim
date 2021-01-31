@@ -44,7 +44,7 @@ end
 
 local function GetClosestPlayerCharacterToCursor()
     local ClosestPlayer = nil
-    local FarthestDistance = math.huge
+    local FarthestDistance = 50
 
     for Index, Player in pairs(Players:GetPlayers()) do --// Loop through all the players.
         if Player == LocalPlayer then continue end --// Skip over this iteration if it is the Clients.
